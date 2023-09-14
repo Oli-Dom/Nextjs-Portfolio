@@ -1,11 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import {
-  ApolloClient,
-  InMemoryCache,
-  createHttpLink,
-  gql,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
+
 import { motion } from 'framer-motion';
 import style from '../styles/Project.module.css';
 
