@@ -11,4 +11,4 @@ Personal Portfolio build using Next js, Three js, and Framer Motion
 
 ## Live Preview
 
-[Demo](https://nextjs-portfolio-kasim393.vercel.app/)
+[Demo]()
