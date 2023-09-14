@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 
-import { motion } from 'framer-motion';
 import style from '../styles/Project.module.css';
 
 const Project = () => {

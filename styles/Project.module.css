@@ -2,7 +2,7 @@
 .project {
   /* Replace with your background image */
   background-size: cover;
-  background-blur: 5px; /* Adjust the blur strength as needed */
+
   display: flex;
   justify-content: center;
   align-items: center;
