@@ -1,19 +1,19 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import styles from "../styles/Home.module.css";
-import { AnimatePresence, motion } from "framer-motion";
-import Model from "../components/Model";
+import { AnimatePresence, motion } from 'framer-motion';
+import Head from 'next/head';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import Model from '../components/Model';
+import styles from '../styles/Home.module.css';
 export default function Home() {
   const router = useRouter();
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
 
   useEffect(() => {
     const handleInput = () => {
-      if (text === "whois") {
+      if (text === 'whois') {
         router.push({
-          pathname: "/about",
+          pathname: '/about',
         });
       }
     };
@@ -50,18 +50,18 @@ export default function Home() {
                 }}
               >
                 <p>Hello! I am</p>
-                <h1>Kasim Shaikh</h1>
-                <h3>front-end developer</h3>
+                <h1>Oliver Dominguez</h1>
+                <h3>Aspiring SWE</h3>
               </motion.div>
             </AnimatePresence>
             <div className={styles.left_col_bottom}>
-              <div style={{ display: "flex", gap: "10px" }}>
+              <div style={{ display: 'flex', gap: '10px' }}>
                 <motion.p
                   initial="hidden"
                   animate="visible"
                   variants={{
                     hidden: {
-                      x: "-100px",
+                      x: '-100px',
                       opacity: 0,
                     },
                     visible: {
@@ -82,7 +82,7 @@ export default function Home() {
                   animate="visible"
                   variants={{
                     hidden: {
-                      x: "100px",
+                      x: '100px',
                       opacity: 0,
                     },
                     visible: {
@@ -95,7 +95,7 @@ export default function Home() {
                     },
                   }}
                 >
-                  {" "}
+                  {' '}
                   write the code below to continue:
                 </motion.p>
               </div>

@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import style from "../styles/About.module.css";
-import { BsFolderFill, BsMarkdownFill } from "react-icons/bs";
-import { FiChevronRight, FiChevronDown } from "react-icons/fi";
-import { HiOutlineMenu } from "react-icons/hi";
-import { AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from 'framer-motion';
+import { useState } from 'react';
+import { AiOutlineClose } from 'react-icons/ai';
+import { BsFolderFill, BsMarkdownFill } from 'react-icons/bs';
+import { FiChevronDown, FiChevronRight } from 'react-icons/fi';
+import { HiOutlineMenu } from 'react-icons/hi';
+import style from '../styles/About.module.css';
 const About = () => {
   const [showReact, setShowReact] = useState(true);
   const [showNext, setShowNext] = useState(false);
@@ -16,7 +16,7 @@ const About = () => {
   return (
     <div className={style.about}>
       <div className={style.skill_menu} onClick={(e) => setShowMenu(!showMenu)}>
-        {" "}
+        {' '}
         {showMenu ? <AiOutlineClose /> : <HiOutlineMenu />}
       </div>
 
@@ -27,14 +27,14 @@ const About = () => {
           animate="visible"
           variants={{
             hidden: {
-              y: "100px",
+              y: '100px',
               opacity: 0,
             },
             visible: {
-              y: "-370px",
+              y: '-370px',
               opacity: 1,
               transition: {
-                type: "spring",
+                type: 'spring',
                 delay: 0.2,
                 duration: 2,
               },
@@ -86,14 +86,14 @@ const About = () => {
           animate="visible"
           variants={{
             hidden: {
-              y: "300px",
+              y: '300px',
               opacity: 0,
             },
             visible: {
-              y: "0px",
+              y: '0px',
               opacity: 1,
               transition: {
-                type: "spring",
+                type: 'spring',
                 delay: 0.2,
                 duration: 3,
               },
@@ -101,12 +101,10 @@ const About = () => {
           }}
         >
           <span className={style.ml_2}> /**</span>
-          <span style={{ fontWeight: "bold" }}>* About me</span>
+          <span style={{ fontWeight: 'bold' }}>* About me</span>
           <span>* Creative and self-starting Front-End Developer</span>
-          <span>* with 2 years experience and maintaining</span>
-          <span>* responsive websites.</span>
           <span>* Proficient in HTML, CSS, JavaScript</span>
-          <span>* and React plus modern libraries and frameworks.</span>
+          <span>* Python, Java and React </span>
 
           <span className={style.ml_2}>*/</span>
         </motion.div>
@@ -118,14 +116,14 @@ const About = () => {
           animate="visible"
           variants={{
             hidden: {
-              x: "100px",
+              x: '100px',
               opacity: 0,
             },
             visible: {
-              x: "0",
+              x: '0',
               opacity: 1,
               transition: {
-                type: "spring",
+                type: 'spring',
                 delay: 2,
               },
             },
@@ -137,7 +135,7 @@ const About = () => {
               <span>
                 <FiChevronDown />
               </span>
-              <span style={{ marginLeft: "5px" }}>MY INTERESTS</span>
+              <span style={{ marginLeft: '5px' }}>MY INTERESTS</span>
               <div className={style.skill}>
                 <div
                   onClick={(e) => setShowReact(!showReact)}
@@ -146,7 +144,7 @@ const About = () => {
                   <span>
                     {showReact ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "rgb(235,203,139)" }}>
+                  <span style={{ color: 'rgb(235,203,139)' }}>
                     <BsFolderFill />
                   </span>
                   <span> React</span>
@@ -160,23 +158,23 @@ const About = () => {
                       exit="go"
                       variants={{
                         hidden: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                         },
                         visible: {
-                          y: "0",
+                          y: '0',
                           opacity: 1,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.5,
                           },
                         },
                         go: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.3,
                           },
@@ -191,12 +189,6 @@ const About = () => {
                       </p>
                       <p>
                         <BsMarkdownFill /> fetching api.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> context api.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> redux.md
                       </p>
                     </motion.div>
                   )}
@@ -210,7 +202,7 @@ const About = () => {
                   <span>
                     {showNext ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "rgb(136,192,208)" }}>
+                  <span style={{ color: 'rgb(136,192,208)' }}>
                     <BsFolderFill />
                   </span>
                   <span> Next</span>
@@ -224,23 +216,23 @@ const About = () => {
                       exit="go"
                       variants={{
                         hidden: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                         },
                         visible: {
-                          y: "0",
+                          y: '0',
                           opacity: 1,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.5,
                           },
                         },
                         go: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.3,
                           },
@@ -256,9 +248,6 @@ const About = () => {
                       <p>
                         <BsMarkdownFill /> fetching api.md
                       </p>
-                      <p>
-                        <BsMarkdownFill /> SSR.md
-                      </p>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -271,7 +260,7 @@ const About = () => {
                   <span>
                     {showLibrary ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "rgb(191,97,106)" }}>
+                  <span style={{ color: 'rgb(191,97,106)' }}>
                     <BsFolderFill />
                   </span>
                   <span> Library</span>
@@ -285,23 +274,23 @@ const About = () => {
                       exit="go"
                       variants={{
                         hidden: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                         },
                         visible: {
-                          y: "0",
+                          y: '0',
                           opacity: 1,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.5,
                           },
                         },
                         go: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.3,
                           },
@@ -317,9 +306,6 @@ const About = () => {
                       <p>
                         <BsMarkdownFill /> tailwind css.md
                       </p>
-                      <p>
-                        <BsMarkdownFill /> framer motion.md
-                      </p>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -332,7 +318,7 @@ const About = () => {
                   <span>
                     {showHtml ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "rgb(163,190,140)" }}>
+                  <span style={{ color: 'rgb(163,190,140)' }}>
                     <BsFolderFill />
                   </span>
                   <span> Html & CSS</span>
@@ -346,23 +332,23 @@ const About = () => {
                       exit="go"
                       variants={{
                         hidden: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                         },
                         visible: {
-                          y: "0",
+                          y: '0',
                           opacity: 1,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.5,
                           },
                         },
                         go: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.3,
                           },
@@ -387,7 +373,7 @@ const About = () => {
                   <span>
                     {showFree ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "whitesmoke" }}>
+                  <span style={{ color: 'whitesmoke' }}>
                     <BsFolderFill />
                   </span>
                   <span> Free Time</span>
@@ -401,23 +387,23 @@ const About = () => {
                       exit="go"
                       variants={{
                         hidden: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                         },
                         visible: {
-                          y: "0",
+                          y: '0',
                           opacity: 1,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.5,
                           },
                         },
                         go: {
-                          y: "-20px",
+                          y: '-20px',
                           opacity: 0,
                           transition: {
-                            type: "spring",
+                            type: 'spring',
                             delay: 0.2,
                             duration: 0.3,
                           },
@@ -425,7 +411,7 @@ const About = () => {
                       }}
                     >
                       <p>
-                        <BsMarkdownFill /> read quran.md
+                        <BsMarkdownFill /> read manga.md
                       </p>
                       <p>
                         <BsMarkdownFill /> play video games.md

@@ -1,57 +1,68 @@
+/* Style for the project container */
 .project {
-  background-color: rgb(13, 17, 23);
-  height: calc(100vh - 110px);
-  color: whitesmoke;
-  overflow: auto;
-}
-.project_container {
-  margin: auto;
-  width: 70%;
-}
-.project_card_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-top: 1rem;
-  gap: 1rem;
-}
-.project_card {
-  /* width: 500px; */
-  margin-bottom: 2rem;
-}
-.project_card_top {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
-}
-.project_card_head {
+  /* Replace with your background image */
+  background-size: cover;
+  background-blur: 5px; /* Adjust the blur strength as needed */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-.project_card_head p {
-  color: rgb(255, 217, 0);
+
+/* Style for the card container */
+.project_container {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.project_card_head span {
-  color: rgb(72, 84, 99);
+
+/* Style for individual project cards */
+.project_card_container {
+  display: flex;
+  justify-content: space-around; /* Evenly space the cards horizontally */
 }
-.project_card_body {
-  background-color: rgb(8, 10, 14);
-  padding: 0.5rem 1rem;
+
+/* Style for each card content */
+.project_card {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the card width as needed */
+  padding: 20px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Transparent white background for cards */
+  border-radius: 10px;
+  margin: 10px; /* Adjust the margin to control spacing between cards */
+  text-align: center;
+}
+
+/* Style for card headings */
+.project_card h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Style for card descriptions */
+.project_card h3 {
+  font-size: 14px;
   margin-top: 10px;
-  border-radius: 6px;
-  color: gray;
 }
-.project_card_bottom {
-  margin-top: 1.5rem;
+
+/* Style for card buttons */
+.project_card button {
+  margin-top: 20px;
+  background: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
-.project_card_bottom a {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  color: rgb(121, 170, 185);
-}
-@media screen and (max-width: 530px) {
-  .project_container {
-    width: 100%;
-    padding: 0 1rem;
-  }
+
+.project_card button:hover {
+  background: #c3c5c7; /* Hover background color */
 }

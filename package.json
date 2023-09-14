@@ -22,5 +22,17 @@
   "devDependencies": {
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.4"
-  }
+  },
+  "description": "<div align=\"center\">\r       <h1> <img src=\"https://raw.githubusercontent.com/kasim393/assets/main/nextjs-portfolio/ss4.png\" width=\"500px\"><br/>Personal Portfolio</h1>\r      </div>",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasim393/Nextjs-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasim393/Nextjs-Portfolio/issues"
+  },
+  "homepage": "https://github.com/kasim393/Nextjs-Portfolio#readme"
 }
